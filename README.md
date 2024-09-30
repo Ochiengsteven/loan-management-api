@@ -71,6 +71,12 @@ This project is a simple backend for a loan management system built with Node.js
 
 ## API Documentation
 
+### Overview
+
+This document provides details about the API endpoints.
+
+- You can also access the Swagger documentation at `http://localhost:3000/api-docs` after starting the server.
+
 ## Table of Contents
 
 1. [Authentication](#authentication)

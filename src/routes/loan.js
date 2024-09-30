@@ -1,4 +1,3 @@
-// src/routes/loan.js
 const express = require("express");
 const { body, param } = require("express-validator");
 const loanController = require("../controllers/loanController");

@@ -1,4 +1,3 @@
-// src/controllers/loanController.js
 const Loan = require("../models/loanModel");
 
 exports.createLoan = async (req, res) => {
