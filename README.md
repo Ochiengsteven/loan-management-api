@@ -26,7 +26,7 @@ This project is a simple backend for a loan management system built with Node.js
 
    ```
 
-   git clone https://github.com/yourusername/loan-management-api.git
+   git clone https://github.com/Ochiengsteven/loan-management-api
 
    cd loan-management-api
 
