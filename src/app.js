@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(cors());
 
-// Connect to MongoDB
+// Connect to MongoDB for tests
 connectDB();
 
 // Routes
@@ -59,7 +59,10 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 module.exports = app;
 
 if (require.main === module) {
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
+  (async () => {
+    await connectDB(); // Connect to MongoDB first
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
+  })();
 }
